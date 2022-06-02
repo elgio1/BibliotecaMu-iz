@@ -31,7 +31,7 @@ if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] == 1) {
                 <input type="submit" value="Ingresar">
 
             </form> <br>
-            <span>Si no tiene una cuenta <a href="registrarse.php">registrate aquí</a></span>
+            <span> Para <a href="registrarse.php">registrate aquí</a></span>
         </div>
     </div>
     
