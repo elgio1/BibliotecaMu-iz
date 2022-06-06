@@ -23,7 +23,8 @@
             <input type="password" name="contraseña"placeholder="Ingrese la contraseña"><br><br>
             <input type="submit" value="Registrarse">
 
-        </form>
+        </form><br>
+        <span>Si ya estas registrado has click <a href="index.php"> aquí </a></span>
     </div>
 </body>
 </html>
