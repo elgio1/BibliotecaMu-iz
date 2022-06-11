@@ -1,0 +1,47 @@
+body{
+    background-color: lightgray;
+    padding-top: 100px;
+    padding-left: 400px;
+}
+.total{
+    float: center;
+    background-color: white;
+}
+.formulario{
+    width:550px;
+    align-items:baseline;
+    float: left;
+    background-color: white;
+    /* display: grid; */
+
+}
+
+.formulario label{
+    color: blue;
+    font-size: 20px;
+}
+
+
+
+.formulario input[type="text"], input[type="password"]{
+    font-size: 20px;
+    border-radius: 10px;
+    border-top: none;
+    border-left :none;
+    border-right:none;
+    border-bottom: 1px solid transparent;
+}
+.formulario input[type="submit"]{
+    font-size: 20px;
+    border-radius: 10px;
+    border-top: none;
+    border-left :none;
+    border-right:none;
+    border-bottom: 1px solid transparent;
+}
+
+.imagen img{
+    width: auto;
+    float: left;
+    
+}
