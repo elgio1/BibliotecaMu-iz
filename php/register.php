@@ -1,3 +1,10 @@
+<?php
+session_start();
+if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] == 1) {
+    header("location: principal.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,15 +23,15 @@
             </div>
         <form action="funcionregistrar.php" method="POST">
             <label >Usuario</label><br>
-            <input type="text" name="usuario" placeholder="Ingrese el usuario"><br><br>
+            <input type="text" name="usuario" placeholder="Ingrese el usuario" required><br><br>
             <label >Email</label><br>
-            <input type="text" name="correo" placeholder="Ingrese el correo "><br><br>
+            <input type="text" name="correo" placeholder="Ingrese el correo" required><br><br>
             <label >Contraseña</label><br>
-            <input type="password" name="contraseña"placeholder="Ingrese la contraseña"><br><br>
+            <input type="password" name="contraseña"placeholder="Ingrese la contraseña" required><br><br>
             <input type="submit" value="Registrar">
 
         </form><br>
-        <span>Si ya estas registrado has click <a href="login.php"> aquí </a></span>
+        <span>¿Ya tienes una cuenta? has click <a href="login.php"> aquí </a></span>
     </div>
 </body>
 </html>

@@ -25,9 +25,9 @@ if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] == 1) {
             </div>
             <form action="funcioningresar.php" method="POST">
                 <label >Usuario</label><br>
-                <input type="text" placeholder="Ingrese su usuario" name="usuario"><br><br>
+                <input type="text" placeholder="Ingrese su usuario" name="usuario" required><br><br>
                 <label >Contraseña</label><br>
-                <input type="password" placeholder="Ingrese su contraseña" name="contraseña"><br><br>
+                <input type="password" placeholder="Ingrese su contraseña" name="contraseña" required><br><br>
                 <input type="submit" value="Ingresar">
 
             </form> <br>
