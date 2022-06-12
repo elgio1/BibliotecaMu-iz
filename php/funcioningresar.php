@@ -36,9 +36,9 @@ if (mysqli_num_rows($consulta)){
 
         <div class="contenedor contenedor-enlaces-nav">
             <div class="btn-categorias" id="btn-categorias">
-                <p>Biblio<b>TEC</b>a</p>
+                <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
             </div>
-            <a href="logoff.php">Libros</a>
+            <a href="#">Libros</a>
 
             <form action="buscarlibro.php" method="post">
                     <input type="search" name="nombre">
@@ -48,10 +48,9 @@ if (mysqli_num_rows($consulta)){
                 <ul class="nav">
                     <li class="lista"><a href="#"><?php echo $usuario=filter_input(0,"usuario"); ?></a>
                         <ul> 
-
-                            <li><a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a>
-                            <li><a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Mis Libros</a>
-                            <li><a href="logoff.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;Cerrar Sesión</a>
+                            <li><a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a></li>
+                            <li><a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Mis Libros</a></li>
+                            <li><a href="logoff.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;Cerrar Sesión</a></li>
                         </ul>
                     </li>
                 </ul>
