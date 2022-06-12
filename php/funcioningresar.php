@@ -24,6 +24,7 @@ if (mysqli_num_rows($consulta)){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imagenes/logo_small_icon_only_inverted.png">
     <link rel="stylesheet" href="../css/principal.css">
+    <script src="https://kit.fontawesome.com/7de4137cd3.js" crossorigin="anonymous"></script>
     <title>BiblioTECa</title>
 </head>
 <body>
@@ -36,8 +37,9 @@ if (mysqli_num_rows($consulta)){
         <div class="contenedor contenedor-enlaces-nav">
             <div class="btn-categorias" id="btn-categorias">
                 <p>Biblio<b>TEC</b>a</p>
-                
             </div>
+            <a href="logoff.php">Libros</a>
+
             <form action="buscarlibro.php" method="post">
                     <input type="search" name="nombre">
             </form>
@@ -46,15 +48,19 @@ if (mysqli_num_rows($consulta)){
                 <ul class="nav">
                     <li class="lista"><a href="#"><?php echo $usuario=filter_input(0,"usuario"); ?></a>
                         <ul> 
-                            <li><a href="#">Mi Perfil</a>
-                            <li><a href="#">Mis Favoritos</a>
-                            <li><a href="logoff.php">Cerrar Sesión</a>
+
+                            <li><a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a>
+                            <li><a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Mis Libros</a>
+                            <li><a href="logoff.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;Cerrar Sesión</a>
                         </ul>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+<?php
+    require "footer.php";
+?>
 </body>
 
 </html>
