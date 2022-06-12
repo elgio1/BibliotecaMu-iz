@@ -14,17 +14,6 @@ if (mysqli_num_rows($consulta)){
 }else{
     $_SESSION["correcto"]= 0;
 }
-if($_SESSION["correcto"] == 0){
-    echo '      
-        <script>
-                alert("Debes inicar sesion antes de acceder a esta pagina"); 
-                window.location = "index.php";
-        </script>
-    ';
-    session_destroy();
-    die();
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -46,21 +35,23 @@ if($_SESSION["correcto"] == 0){
 
         <div class="contenedor contenedor-enlaces-nav">
             <div class="btn-categorias" id="btn-categorias">
-                <p>Biblio<b>TECa</b></p>
+                <p>Biblio<b>TEC</b>a</p>
                 
             </div>
             <form action="buscarlibro.php" method="post">
-                    <label >Buscar: </label>
                     <input type="search" name="nombre">
-                    <input type="submit" value="Buscar">
             </form>
 
             <div class="enlaces">
-                
-                
-                <a href="#"><?php 
-                echo $usuario=filter_input(0,"usuario"); ?></a>
-                <a href="logoff.php">Cerrar Sesion</a>
+                <ul class="nav">
+                    <li class="lista"><a href="#"><?php echo $usuario=filter_input(0,"usuario"); ?></a>
+                        <ul> 
+                            <li><a href="#">Mi Perfil</a>
+                            <li><a href="#">Mis Favoritos</a>
+                            <li><a href="logoff.php">Cerrar Sesión</a>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
