@@ -46,9 +46,10 @@ if (mysqli_num_rows($consulta)){
 
             <div class="enlaces">
                 <ul class="nav">
+                    
                     <li class="lista"><a href="#"><?php echo $usuario=filter_input(0,"usuario"); ?></a>
                         <ul> 
-                            <li><a href="#"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a></li>
+                            <li><a href="usuario_perfil.php"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a></li>
                             <li><a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Mis Libros</a></li>
                             <li><a href="logoff.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>&nbsp;&nbsp;Cerrar Sesión</a></li>
                         </ul>
@@ -58,10 +59,26 @@ if (mysqli_num_rows($consulta)){
         </div>
     </nav>
 
-    <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
-    <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
-    <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
-    <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
+    <?php
+    require("db.php");
+    $sql="SELECT * FROM libros";
+    $consulta=mysqli_query($conexion,$sql);
+    
+    ?>
+    <div>
+    <?php foreach($consulta as $valor){?>
+        <?php
+        $tema = $valor['tema'];
+        $integrantes = $valor['integrantes'];
+        $fecha = $valor['fechaPub'];
+        $liga = $valor['direccion'];
+        ?>
+        <a href="<?php echo $liga; ?>" download target="new_blank"><h1><?php echo $tema; ?></h1>
+            <h3>Autores: <?php echo $integrantes; ?></h3>
+            <h3>Publicacion: <?php echo $fecha; ?></h3>
+        </a>
+        <?php } ?>
+    </div>
 <?php
     require "footer.php";
 ?>
