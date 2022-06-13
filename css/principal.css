@@ -9,6 +9,9 @@
 body{
     background: #EAEDED ;
     font-family: Roboto;
+    position: relative;
+    padding-bottom: 5em;
+    min-height: 100vh;
 }
 
 a{

@@ -57,6 +57,11 @@ if (mysqli_num_rows($consulta)){
             </div>
         </div>
     </nav>
+
+    <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
+    <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
+    <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
+    <p><a href="funcioningresar.php">Biblio<b>TEC</b>a</a></p>
 <?php
     require "footer.php";
 ?>
