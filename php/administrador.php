@@ -8,6 +8,10 @@
     <title>BiblioTECa</title>
 </head>
 <body>
+
+    <h2>Bienvenido Administrador</h2>
+    <p>Selecciona la opción que deseas realizar</p>
+    <br><br>
     <div class="container">
 
         <div class="container-image">
@@ -31,7 +35,7 @@
             </div>
         </div>
 
-        
+        <br><br>
         <div class="container-image">
             <img src = "../imagenes/libro_actualizar.jpg" alt="">
             <div class="content">
@@ -65,5 +69,9 @@
         </div>
 
     </div>
+
+<?php
+    require "footer.php";
+?>
 </body>
 </html>
