@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imagenes/logo_small_icon_only_inverted.png">
     <link rel="stylesheet" href="../css/principal.css">
-    <title>Document</title>
+    <title>BiblioTECa</title>
 </head>
 <body>
 <nav class="menu" id="menu">
@@ -24,7 +24,7 @@
                     <?php 
                         session_start();
                      ?>
-                    <li class="lista"><a href="#"><?php print_r($_SESSION['usuario']); ?></a>
+                    <li class="lista"><a href="#">Acciones</a>
                         <ul> 
                             <li><a href="usuario_perfil.php"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a></li>
                             <li><a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Mis Libros</a></li>

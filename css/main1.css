@@ -21,8 +21,6 @@ body{
     font-size: 20px;
 }
 
-
-
 .formulario input[type="text"], input[type="password"]{
     font-size: 20px;
     border-radius: 10px;
@@ -42,6 +40,5 @@ body{
 
 .imagen img{
     width: auto;
-    float: left;
-    
+    float: left;    
 }

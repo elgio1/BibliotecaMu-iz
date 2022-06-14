@@ -39,15 +39,6 @@ if (mysqli_num_rows($consulta)){
             <form action="buscarlibro.php" method="post">
                    Buscar: <input type="search" name="nombre">
             </form>
-
-            <div class="enlaces">
-                <ul class="nav">
-                    <?php $usuario=filter_input(0,"usuario");
-                        if($_SESSION['usuario']==null){
-                            $_SESSION['usuario']=$usuario;
-                        }
-                        
-                     ?>
                     <li class="lista"><a href="#"><?php print_r($_SESSION['usuario']); ?></a>
                         <ul> 
                             <li><a href="usuario_perfil.php"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a></li>
