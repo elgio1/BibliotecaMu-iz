@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #EAEDED ;
+    font-family: Roboto;
+    position: relative;
+    padding-bottom: 5em;
+    min-height: 100vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+main article{
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    height: 1000px;
+}
+
+/* Trabajando con los enlaces del nav */
+.menu{
+    background: lightgrey;
+    padding: 5px 0;
+    margin-bottom: 20px;
+}
+
+.menu .contenedor-botones-menu{
+    display: none;
+    justify-content: space-between;
+}
+
+.menu .contenedor-botones-menu button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+}
+
+.menu .contenedor-botones-menu button:hover{
+    border: 1px solid rgba(255,255,255,.4);
+}
+
+.menu .contenedor-botones-menu .btn-menu-cerrar{
+    display: none;
+}
+
+.menu .contenedor-botones-menu .btn-menu-cerrar .activo{
+    display: inline-block;
+}
+
+.menu .contenedor-enlaces-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+.nav li a{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: none;
+    display:block;
+    font-family:Roboto;
+}
+
+.nav li a:hover{
+    background-color: #d1d4d4;
+}
+
+.nav li ul{
+    display:none;
+    position: absolute;
+    min-width: 140px;
+    font-family: Roboto;
+}
+
+.nav li:hover > ul{
+    display:block;
+}
+
+.librillos{
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    background-color: white;
+    border: 10px solid #EAEDED;
+    display: block;
+}
+.librillos a{
+    color: black;
+    text-align: justify;
+    
+}
+.librillos h1{
+    font-size: 23px;
+    padding-top: 40px;
+    padding-left:25% ;
+}
+.librillos h3{
+    font-size: 15px;
+    padding-left: 25%;
+    
+}
+.librillos img{
+    width: 230px;
+    height: 230px;
+    float: left;
+}
