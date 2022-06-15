@@ -69,6 +69,26 @@
             </div>
         </div>
 
+        <div class="container-image">
+            <img src = "../imagenes/libro_report.jpg" alt="">
+            <div class="content">
+                <p>
+                    <span>Eliminar Libros</span>
+                    El panel Eliminar Libros le permite borrar los libros disponibles en la base de datos
+                </p>
+            </div>
+        </div>
+
+        <div class="container-image">
+            <img src = "../imagenes/user_report.jpg" alt="">
+            <div class="content">
+                <p>
+                    <span>Eliminar Libros</span>
+                    El panel Eliminar Libros le permite borrar los libros disponibles en la base de datos
+                </p>
+            </div>
+        </div>
+
     </div>
 
 <?php

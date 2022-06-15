@@ -24,7 +24,7 @@
             <input type="submit" value="Registrar">
 
         </form><br>
-        <span>¿Ya tienes una cuenta? has click <a href="index.php"> aquí </a></span>
+        <span>¿Ya tienes una cuenta? has click <a href="index.php"> aquí </a></span><br><br>
     </div>
 </body>
 </html>

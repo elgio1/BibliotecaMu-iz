@@ -20,8 +20,8 @@ if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] == 1) {
         
         <div  class="formulario" >
             <div class="imagen">
-                <img src="../imagenes/logo_sm.png"><br>
-                <img src="../imagenes/sign.gif" >
+                <img src="../imagenes/logo_sm.png"><br><br><br><br><br><br>
+                <img src="../imagenes/sign.gif" ><br>
             </div>
             <form action="funcioningresar.php" method="POST">
                 <label >Usuario</label><br>

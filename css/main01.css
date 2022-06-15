@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    font-family: Roboto;
+}
+
 body{
     background-color: lightgray;
-    padding-top: 50px;
+    padding-top: 10%;
     padding-left: 400px;
 }
 .total{
     background-color: white;
 }
+
 .formulario{
+    text-align: center;
     width:550px;
     align-items:baseline;
     float: left;
@@ -21,6 +29,7 @@ body{
 }
 
 .formulario input[type="text"], input[type="password"]{
+    text-align: center;
     font-size: 20px;
     border-radius: 10px;
     border-top: none;
@@ -41,3 +50,8 @@ body{
     width: auto;
     float: left;    
 }
+
+a:link{
+    color:cadetblue;
+}
+
