@@ -42,6 +42,7 @@ main article{
     background: #F8F9FA;
     padding: 5px 0;
     margin-bottom: 20px;
+    
 }
 
 .menu .contenedor-botones-menu{
@@ -116,20 +117,24 @@ ul,ol,li{
 .librillos a{
     color: black;
     text-align: justify;
-    
 }
 .librillos h1{
     font-size: 23px;
-    padding-top: 40px;
-    padding-left:25% ;
+    padding-bottom: 15px;
+    padding-left:25%;
+    color: #af3352;
 }
-.librillos h3{
+.librillos p{
     font-size: 15px;
     padding-left: 25%;
-    
+    color: #af3352;
+}
+.librillos span{
+    color: black;
 }
 .librillos img{
-    width: 230px;
-    height: 230px;
+    width: 180px;
+    height: 210px;
     float: left;
+    border: 1px solid #000000;
 }

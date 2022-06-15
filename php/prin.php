@@ -60,10 +60,18 @@ if(!$_SESSION['usuario']){
         <div class="librillos">
             
             <a href="<?php echo $liga; ?>" target="new_blank" >
+            <br><br>
                 <img src="<?php echo $ima?>" >
                 <h1><?php echo $tema; ?></h1>
-                <h3>Autores: <?php echo $integrantes; ?></h3>
-                <h3>Publicacion: <?php echo $fecha; ?></h3>
+                <p>
+                    <span>Autores: </span>
+                    <?php echo $integrantes; ?>
+                    <br><br>
+                </p>
+                <p>
+                    <span>Publicacion: </span>
+                    <?php echo $fecha; ?>
+                </p>
             </a>
         </div>
         

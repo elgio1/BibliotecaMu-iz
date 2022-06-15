@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imagenes/iconopes.png">
     <link rel="stylesheet" href="../css/principal.css">
-    <script src="https://kit.fontawesome.com/7de4137cd3.js" crossorigin="anonymous"></script>s
+    <script src="https://kit.fontawesome.com/7de4137cd3.js" crossorigin="anonymous"></script>
     <title>BiblioTECa</title>
 </head>
 <body>
@@ -51,15 +51,23 @@
             $fecha = $valor['fechaPub'];
             $liga = $valor['direccion'];
             ?>
-            <div class="librillos">
-                
-                <a href="<?php echo $liga; ?>" target="new_blank" >
-                    <img src="../imagenes/Portadares1.jpeg" >
-                    <h1><?php echo $tema; ?></h1>
-                    <h3>Autores: <?php echo $integrantes; ?></h3>
-                    <h3>Publicacion: <?php echo $fecha; ?></h3>
-                </a>
-            </div>
+        <div class="librillos">
+            
+            <a href="<?php echo $liga; ?>" target="new_blank" >
+            <br><br>
+                <img src="<?php echo $ima?>" >
+                <h1><?php echo $tema; ?></h1>
+                <p>
+                    <span>Autores: </span>
+                    <?php echo $integrantes; ?>
+                    <br><br>
+                </p>
+                <p>
+                    <span>Publicacion: </span>
+                    <?php echo $fecha; ?>
+                </p>
+            </a>
+        </div>
             
             <?php } ?>
     <?php
