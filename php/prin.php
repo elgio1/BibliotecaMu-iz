@@ -21,16 +21,16 @@ if(!$_SESSION['usuario']){
             <div class="btn-categorias" id="btn-categorias">
                 <p><a href="prin.php">Biblio<b>TEC</b>a</a></p>
             </div>
-            <a href="libros.php">Libros</a>
+            <a href="libros.php">Tomos</a>
 
             <form action="buscarlibro.php" method="post">
-                   Buscar: <input type="search" name="nombre">
+                <input type="search" name="nombre" placeholder="Buscar..." >
             </form>
 
             <div class="enlaces">
                 <ul class="nav">
                     
-                    <li class="lista"><a href="#"><?php print_r($_SESSION['usuario']); ?></a>
+                    <li class="lista"><a href="#"><?php print_r($_SESSION['usuario']); ?>&nbsp;<i class="fa-solid fa-sort-down"></i></a>
                         <ul> 
                             <li><a href="usuario_perfil.php"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a></li>
                             <li><a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Mis Libros</a></li>

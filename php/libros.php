@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../imagenes/iconopes.png">
     <link rel="stylesheet" href="../css/principal.css">
+    <script src="https://kit.fontawesome.com/7de4137cd3.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             </div>
 
             <form action="buscarlibro.php" method="post">
-                   Buscar: <input type="search" name="nombre">
+                <input type="search" name="nombre" placeholder="Buscar..." >
             </form>
 
             <div class="enlaces">
@@ -24,7 +25,7 @@
                     <?php 
                         session_start();
                      ?>
-                    <li class="lista"><a href="#"><?php print_r($_SESSION['usuario']); ?></a>
+                    <li class="lista"><a href="#"><?php print_r($_SESSION['usuario']); ?>&nbsp;<i class="fa-solid fa-sort-down"></i></a>
                         <ul> 
                             <li><a href="usuario_perfil.php"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;Mi Perfil</a></li>
                             <li><a href="#"><i class="fa-solid fa-book"></i>&nbsp;&nbsp;Mis Libros</a></li>

@@ -73,8 +73,8 @@
             <img src = "../imagenes/libro_report.jpg" alt="">
             <div class="content">
                 <p>
-                    <span>Eliminar Libros</span>
-                    El panel Eliminar Libros le permite borrar los libros disponibles en la base de datos
+                    <span>Reporte de Libros</span>
+                    El panel Reporte de Libros le permite mostrar en pdf los libros disponibles en la base de datos
                 </p>
             </div>
         </div>
@@ -83,8 +83,8 @@
             <img src = "../imagenes/user_report.jpg" alt="">
             <div class="content">
                 <p>
-                    <span>Eliminar Libros</span>
-                    El panel Eliminar Libros le permite borrar los libros disponibles en la base de datos
+                    <span>Reporte de Usuarios</span>
+                    El panel Reporte de Usuarios le permite mostrar en pdf los usuarios disponibles en la base de datos
                 </p>
             </div>
         </div>
