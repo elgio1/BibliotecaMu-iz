@@ -24,7 +24,7 @@ if(!$_SESSION['usuario']){
             <a href="libros.php">Tomos</a>
 
             <form action="buscarlibro.php" method="post">
-                <input type="search" name="nombre" placeholder="Buscar..." >
+                <input type="search" name="nombre" placeholder="Buscar..."  style="width:200px; height:25px">
             </form>
 
             <div class="enlaces">

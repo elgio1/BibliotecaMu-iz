@@ -8,14 +8,20 @@
 }
 
 body{
-    background: #EAEDED ;
+    background: #E9EAED ;
     position: relative;
     padding-bottom: 5em;
     min-height: 100vh;
 }
 
 a{
+    font-size: 16px;
+    color: #000000d2;
     text-decoration: none;
+}
+
+a:hover{
+    color:#000000fd;
 }
 
 .contenedor{
@@ -33,7 +39,7 @@ main article{
 
 /* Trabajando con los enlaces del nav */
 .menu{
-    background: lightgrey;
+    background: #F8F9FA;
     padding: 5px 0;
     margin-bottom: 20px;
 }
