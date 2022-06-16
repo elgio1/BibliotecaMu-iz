@@ -1,13 +1,15 @@
 
 <?php
 session_start();
-if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] == 0) {
+if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] = 0) {
     echo '      
     <script>
-            alert("El usuario o la contraseña no coinciden, por favor verifique los datos"); 
+            alert("El correo o la contraseña no coinciden, por favor verifica los datos"); 
             window.location = "index.php";
     </script>
-';exit;
+';
+exit;
+    header("location: index.php");
 }
 require_once ("db.php");
 
@@ -32,14 +34,15 @@ if($_SESSION["correcto"]==1){
     </script>
 ';
 exit;
-
+    header('Location: prin.php');
 }else{
     echo '      
     <script>
-            alert("El usuario o la contraseña no coinciden, por favor verifique los datos"); 
+            alert("El usuario no existe, intenta con otro"); 
             window.location = "index.php";
     </script>
 ';
 exit;
 }
 ?>
+
