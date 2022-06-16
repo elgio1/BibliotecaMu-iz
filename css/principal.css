@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    font-family: Roboto;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #E9EAED ;
+    position: relative;
+    padding-bottom: 5em;
+    min-height: 100vh;
+}
+
+a{
+    font-size: 16px;
+    color: #000000d2;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#000000fd;
+}
+
+.contenedor{
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+}
+
+main article{
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    height: 1000px;
+}
+
+/* Trabajando con los enlaces del nav */
+.menu{
+    background: #F8F9FA;
+    padding: 5px 0;
+    margin-bottom: 20px;
+    
+}
+
+.menu .contenedor-botones-menu{
+    display: none;
+    justify-content: space-between;
+}
+
+.menu .contenedor-botones-menu button{
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+}
+
+.menu .contenedor-botones-menu button:hover{
+    border: 1px solid rgba(255,255,255,.4);
+}
+
+.menu .contenedor-botones-menu .btn-menu-cerrar{
+    display: none;
+}
+
+.menu .contenedor-botones-menu .btn-menu-cerrar .activo{
+    display: inline-block;
+}
+
+.menu .contenedor-enlaces-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ul,ol,li{
+    list-style: none;
+}
+
+.nav li a{
+    background-color:  d1d4d4;
+    color: #000000;
+    padding: 10px 15px;
+    text-decoration: none;
+    display:block;
+}
+
+.nav li a:hover{
+    background-color: #adb1b1;
+}
+
+.nav li ul{
+    background-color: rgb(240, 240, 240);
+    display:none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul{
+    display:block;
+}
+
+.librillos{
+    width: 100%;
+    height: auto;
+    padding-left: 10%;
+    padding-bottom: 10%;
+    background-color: white;
+    border: 10px solid #EAEDED;
+    display: block;
+}
+.librillos a{
+    color: black;
+    text-align: justify;
+}
+.librillos h1{
+    font-size: 26px;
+    padding-bottom: 15px;
+    padding-left:25%;
+    color: #af3352;
+}
+.librillos p{
+    font-size: 15px;
+    padding-left: 25%;
+    color: #af3352;
+}
+.librillos span{
+    color: black;
+}
+.librillos img{
+    width: 180px;
+    height: 210px;
+    float: left;
+    border: 1px solid #000000;
+}
+
