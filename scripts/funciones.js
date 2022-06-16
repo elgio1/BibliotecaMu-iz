@@ -14,14 +14,14 @@ function reporte_usuarios(){
 
 function agregar_libro(){
     var w = window.open('','','width=500,height=500');
-    w.document.write('Se te esta redireccionando a la ventana para agregar libros, por favor espera')
-    setTimeout(function() {w.close();}, 2000)
-    location.href="#";
+    w.document.write('Se te esta redireccionando a la pagina para agregar libros, por favor espera')
+    setTimeout(function() {w.close();}, 500)
+    location.href="agregar_libro.php";
 }
 
 function borrar_libro(){
     var w = window.open('','','width=500,height=500');
-    w.document.write('Se te esta redireccionando a la ventana para borrar libros, por favor espera')
-    setTimeout(function() {w.close();}, 2000)
-    location.href="#";
+    w.document.write('Se te esta redireccionando a la pagina para borrar libros, por favor espera')
+    setTimeout(function() {w.close();}, 500)
+    location.href="../php/borrar_libro.php";
 }

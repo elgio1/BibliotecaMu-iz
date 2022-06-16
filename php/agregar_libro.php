@@ -19,7 +19,7 @@
                 <label >Direccion</label><br>
                 <input type="text" placeholder="Direccion de Descarga" name="direccion" required><br><br>
                 <label >Portada</label><br>
-                <input type="text" placeholder="Direccion de Portada" name="Portada" required><br><br>
+                <input type="file" placeholder="Direccion de Portada" name="Portada" required><br><br>
                 <input type="submit" value="Agregar">
 
             </form> <br>
