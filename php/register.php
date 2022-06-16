@@ -12,7 +12,7 @@
     <div class="formulario">
             <div class="imagen">
                 <img src="../imagenes/logo_sm.png"><br>
-                <img src="../imagenes/sign.gif">
+                <img src="../imagenes/register.gif">
             </div>
         <form action="funcionregistrar.php" method="POST">
             <label >Usuario</label><br>
