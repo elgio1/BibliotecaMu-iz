@@ -5,7 +5,8 @@
 }
 
 body{
-    background-color: lightgray;
+    background-image:  url("../imagenes/fondo.jpg");
+    background-repeat: repeat;
     padding-top: 10%;
     padding-left: 400px;
 }
