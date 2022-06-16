@@ -70,12 +70,6 @@ label{
     pointer-events: none;
 }
 
-input:focus~label,
-input:valid~label{
-    top: -14px;
-    font-size: 12px;
-    color: #2196f3;
-}
 
 .barra{
     position: relative;
@@ -98,6 +92,9 @@ input:focus~.barra::before{
     width: 100%;
 }
 
+input[type="file"] {
+    color: transparent;
+}
 
 button{
     font-family: 'roboto';
@@ -140,4 +137,17 @@ a:active{
 
 a:hover{
     color:blue;
+}
+
+p{
+    text-align: center;
+}
+
+.por{
+    text-align: left;
+    font-size: 14px;
+    left: 10px;
+    top: 10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
 }

@@ -12,6 +12,8 @@
     <form action="borra.php" method="POST">
         <input type="text" placeholder="Tema del libro a borrar" name="borra" required><br><br>
         <Button type="submit" value="Borrar">Borrar</Button>
+        <br>
+        <p><a href="logoff.php">Volver</a></p>
     </form> <br>
 </body>
 </html>

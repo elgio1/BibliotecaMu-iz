@@ -20,10 +20,10 @@
                 <input type="text" placeholder="Titulo del Libro" name="titulo" required><br><br>
                 
                 <input type="text" placeholder="Direccion de Drive" name="direccion" required><br><br>
-                
-                <input type="file" placeholder="Direccion de Portada" name="Portada" required><br><br>
+                <p class="por">&nbsp;Portada de Libro</p>
+                <input  type="file" placeholder="Direccion de Portada" name="Portada" id="img"required ><br><br>
                 <Button type="submit" value="Borrar">Agregar</Button>
-                <a href="administrador.php">Volver</a>
+                <p><a href="logoff.php">Volver</a></p>
             </form> <br>
 </body>
 </html>

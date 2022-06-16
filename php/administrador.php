@@ -14,13 +14,14 @@
         <h2>Bienvenido Administrador</h2>
         <p>Selecciona la opción que deseas realizar</p>
         <br>
-        <a href="logoff.php">Cerrar sesion</a><br>
         <div class="contenedor_botones">
             <button class="btn" onclick="reporte_libros()"><span>Reporte De Libros</span></buttton>
             <button class="btn" onclick="reporte_usuarios()"><span>Reporte De Usuarios</span></buttton>
             <button class="btn" onclick="agregar_libro()"><span>Agregar Libro</span></buttton>
             <button class="btn" onclick="borrar_libro()"><span>Borrar Libro</span></buttton>
         </div><br>
+
+        <br> <p><a href="logoff.php">Cerrar Sesión</a></p>
         
     </div>
 <?php

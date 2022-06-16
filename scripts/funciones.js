@@ -13,15 +13,23 @@ function reporte_usuarios(){
 }
 
 function agregar_libro(){
-    var w = window.open('','','width=500,height=500');
-    w.document.write('Se te esta redireccionando a la pagina para agregar libros, por favor espera')
-    setTimeout(function() {w.close();}, 500)
     location.href="agregar_libro.php";
 }
 
 function borrar_libro(){
-    var w = window.open('','','width=500,height=500');
-    w.document.write('Se te esta redireccionando a la pagina para borrar libros, por favor espera')
-    setTimeout(function() {w.close();}, 500)
-    location.href="../php/borrar_libro.php";
+    location.href= "borrar_libro.php";
 }
+
+
+window.pressed = function(){
+    var a = document.getElementById('aa');
+    if(a.value == "")
+    {
+        fileLabel.innerHTML = "Choose file";
+    }
+    else
+    {
+        var theSplit = a.value.split('\\');
+        fileLabel.innerHTML = theSplit[theSplit.length-1];
+    }
+};
