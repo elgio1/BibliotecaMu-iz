@@ -16,7 +16,7 @@
     <div class="container">
 
         <div class="container-image">
-            <img src = "../imagenes/user_actualizar.jpg" alt="">
+            <a href="#"> <img src="../imagenes/user_actualizar.jpg"> </a>
             <div class="content">
                 <p>
                     <span>Actualizar Usuarios</span>
@@ -27,7 +27,7 @@
 
         
         <div class="container-image">
-            <img src = "../imagenes/user_delate.jpg" alt="">
+        <a href="#"> <img src="../imagenes/user_delate.jpg"> </a>
             <div class="content">
                 <p>
                     <span>Eliminar Usuarios</span>
@@ -38,7 +38,7 @@
 
         <br><br>
         <div class="container-image">
-            <img src = "../imagenes/libro_actualizar.jpg" alt="">
+            <a href="#"> <img src = "../imagenes/libro_actualizar.jpg"> </a>
             <div class="content">
                 <p>
                     <span>Actualizar Libros</span>
@@ -49,7 +49,7 @@
 
         
         <div class="container-image">
-            <img src = "../imagenes/libro_agregar.jpg" alt="">
+            <a href="#"> <img src = "../imagenes/libro_agregar.jpg" alt=""> </a>
             <div class="content">
                 <p>
                     <span>Agregar Libros</span>
@@ -60,7 +60,7 @@
 
         
         <div class="container-image">
-            <img src = "../imagenes/libro_eliminar.jpg" alt="">
+            <a href="#"> <img src = "../imagenes/libro_eliminar.jpg" alt=""> </a>
             <div class="content">
                 <p>
                     <span>Eliminar Libros</span>
@@ -70,7 +70,7 @@
         </div>
 
         <div class="container-image">
-            <img src = "../imagenes/libro_report.jpg" alt="">
+            <a href="#"> <img src = "../imagenes/libro_report.jpg" alt=""> </a>
             <div class="content">
                 <p>
                     <span>Reporte de Libros</span>
@@ -80,7 +80,7 @@
         </div>
 
         <div class="container-image">
-            <img src = "../imagenes/user_report.jpg" alt="">
+            <a href="#"> <img src = "../imagenes/user_report.jpg" alt=""></a>
             <div class="content">
                 <p>
                     <span>Reporte de Usuarios</span>
@@ -94,5 +94,12 @@
 <?php
     require "footer.php";
 ?>
+
+<?php
+    function borra(){
+        echo 'HOla';
+    }
+?>
+
 </body>
 </html>

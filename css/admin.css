@@ -19,6 +19,10 @@ h2,p{
     text-align: center;
 }
 
+h3{
+    text-align: left;
+}
+
 .container{
     display: grid;
     width: 80%;
