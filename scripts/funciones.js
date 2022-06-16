@@ -1,5 +1,5 @@
 function reporte_libros(){
-    var w = window.alert('','','width=500,height=500');
+    var w = window.open('','','width=500,height=500');
     w.document.write('Se esta generando tu reporte de libros, por favor espera')
     setTimeout(function() {w.close();}, 2000)
     location.href="reporte_libros.php";
