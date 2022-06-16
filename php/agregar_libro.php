@@ -7,7 +7,7 @@
     <title>BiblioTECa</title>
 </head>
 <body>
-<form action="agrega.php" method="POST">
+            <form action="agrega.php" method="POST">
                 <label >Tema</label><br>
                 <input type="text" placeholder="Tema del Libro" name="tema" required><br><br>
                 <label >Integrantes</label><br>
