@@ -23,7 +23,7 @@
                 
                 <input type="file" placeholder="Direccion de Portada" name="Portada" required><br><br>
                 <Button type="submit" value="Borrar">Agregar</Button>
-
+                <a href="administrador.php">Volver</a>
             </form> <br>
 </body>
 </html>

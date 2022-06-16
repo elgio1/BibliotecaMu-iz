@@ -6,8 +6,21 @@
 }
 
 a{
+    text-align: center;
     text-decoration: none;
     font-size: 20px;
+}
+
+a:link{
+    color:cadetblue;
+}
+
+a:active{
+    color:blue;
+}
+
+a:hover{
+    color:blue;
 }
 
 body{
