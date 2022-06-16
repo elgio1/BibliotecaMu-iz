@@ -2,6 +2,7 @@
 session_start();
 if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] == 1) {
     header("location: prin.php");
+    
 }
 ?>
 
@@ -12,7 +13,7 @@ if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] == 1) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../css/main01.css">
     <link rel="icon" href="../imagenes/iconopes.png">
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>s
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiblioTECa</title>
 </head>

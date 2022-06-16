@@ -2,7 +2,12 @@
 <?php
 session_start();
 if (isset($_SESSION["correcto"]) && $_SESSION["correcto"] == 0) {
-    header("location: index.php");
+    echo '      
+    <script>
+            alert("El usuario o la contraseña no coinciden, por favor verifique los datos"); 
+            window.location = "index.php";
+    </script>
+';exit;
 }
 require_once ("db.php");
 
@@ -20,9 +25,21 @@ if (mysqli_num_rows($consulta)){
 
 if($_SESSION["correcto"]==1){
     $_SESSION['usuario']=$usuario;
-    header('Location: prin.php');
+    echo '      
+    <script>
+            alert("Has accedido correctamente"); 
+            window.location = "prin.php";
+    </script>
+';
+exit;
+
 }else{
-    header('Location: index.php');
+    echo '      
+    <script>
+            alert("El usuario o la contraseña no coinciden, por favor verifique los datos"); 
+            window.location = "index.php";
+    </script>
+';
+exit;
 }
 ?>
-
